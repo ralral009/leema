@@ -1,9 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: ubuntu
+  name: nginx
+  namespace: devops
 spec:
   containers:
-  - name: ubuntu
-    #image: harbor.myweb.io/erp/ubuntu:0.1
-    image: ubuntu
+  - name: nginx
+    image: nginx
+    #image: harbor.myweb.io/erp/nginx:0.1
